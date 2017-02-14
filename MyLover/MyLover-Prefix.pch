@@ -1,0 +1,30 @@
+//
+//  MyLover-Prefix.pch
+//  MyLover
+//
+//  Created by joker on 15/12/10.
+//  Copyright © 2015年 joker. All rights reserved.
+//
+
+#import <Availability.h>
+#pragma clang diagnostic ignored "-Wmissing-selector-name"
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+#pragma clang diagnostic ignored "-Wunused-function unused function %0"
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <SystemConfiguration/SystemConfiguration.h>
+    #import <MobileCoreServices/MobileCoreServices.h>
+    #import "DEFINE.h"
+    #import "DateHelper.h"
+    #import "Reachability.h"
+    #import "Masonry.h"
+    #import "BasePages.h"
+    #import "pubFunc.h"
+    #import "UIViewController+RSPenrose.h"
+#endif
